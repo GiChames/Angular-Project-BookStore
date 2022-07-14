@@ -1,0 +1,16 @@
+<div class="card" style="width: 14rem;">
+    <img class="card-img-top w-100px" src='{{"assets/images/"+ livro.img +".jpg"}}' alt="Foto do Livro">
+    <div class="card-body">
+      <h5 class="card-title text-center">{{ livro.name }}</h5>
+      <div class="card-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-center">{{ livro.category }}</li>
+              <li class="list-group-item text-center">{{ livro.quantity }}</li>
+              <li class="list-group-item text-center">{{ livro.price | currency:'BRL'}}</li>
+            </ul>
+      </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-sm btn-outline-primary mx-1">Comprar</button>
+      <button type="button" class="btn btn-sm btn-outline-dark mx-1">Detalhes</button>
+    </div>
+  </div>
